@@ -1,0 +1,109 @@
+.bgstars div {
+    position: fixed;
+    width: 1px;
+    height: 1px;
+    border-radius: 100%;
+    animation: fade var(--anim-duration) linear infinite;
+}
+
+.bgstars div:nth-child(1){
+    --anim-duration: 3s;
+    top: 10%;
+    left: 10%;
+    box-shadow: 2px 2px 2px 1px rgb(240, 243, 70);
+}
+
+.bgstars div:nth-child(2){
+    --anim-duration: 7s;
+    top: 15%;
+    left: 15%;
+    box-shadow: 2px 2px 2px 1px rgb(167, 230, 255);
+}
+.bgstars div:nth-child(3){
+    --anim-duration: 9s;
+    top: 25%;
+    left: 10%;
+    box-shadow: 2px 2px 2px 1px rgb(252, 255, 94);
+}
+
+.bgstars div:nth-child(4){
+    --anim-duration: 7s;
+    top: 35%;
+    left: 5%;
+    box-shadow: 2px 2px 2px 1px rgb(249, 250, 198);
+}
+.bgstars div:nth-child(5){
+    --anim-duration: 10s;
+    top: 15%;
+    left: 75%;
+    box-shadow: 2px 2px 2px 1px rgb(251, 255, 0);
+}
+
+.bgstars div:nth-child(6){
+    --anim-duration: 9s;
+    top: 25%;
+    left: 85%;
+    box-shadow: 2px 2px 2px 1px rgb(237, 238, 177);
+}
+.bgstars div:nth-child(7){
+    --anim-duration: 10s;
+    top: 20%;
+    left: 89%;
+    box-shadow: 2px 2px 2px 1px rgb(139, 251, 255);
+}
+
+.bgstars div:nth-child(8){
+    --anim-duration: 5s;
+    top: 10%;
+    left: 82%;
+    box-shadow: 4px 4px 2px 1px rgb(148, 250, 245);
+}
+.bgstars div:nth-child(9){
+    --anim-duration: 7s;
+    top: 10%;
+    left: 50%;
+    box-shadow: 2px 2px 2px 1px rgb(251, 255, 0);
+}
+
+.bgstars div:nth-child(10){
+    --anim-duration: 9s;
+    top: 25%;
+    left: 35%;
+    box-shadow: 2px 2px 2px 1px rgb(254, 255, 174);
+}
+
+.bgstars div:nth-child(11){
+    --anim-duration: 8s;
+    top: 20%;
+    left: 57%;
+    box-shadow: 2px 2px 2px 1px rgb(251, 255, 0);
+}
+
+.bgstars div:nth-child(12){
+    --anim-duration: 6s;
+    top: 8%;
+    left: 30%;
+    box-shadow: 2px 2px 2px 1px rgb(251, 255, 0);
+}
+
+
+.bgstars div:nth-child(13){
+    --anim-duration: 15s;
+    top: 40%;
+    left: 80%;
+    box-shadow: 2px 2px 2px 1px rgb(171, 235, 255);
+}
+
+.bgstars div:nth-child(14){
+    --anim-duration: 4s;
+    top: 41%;
+    left: 25%;
+    box-shadow: 2px 2px 2px 1px rgb(251, 255, 0);
+}
+
+.bgstars div:nth-child(15){
+    --anim-duration: 9s;
+    top: 47%;
+    left: 93%;
+    box-shadow: 2px 2px 2px 1px rgb(251, 255, 0);
+}

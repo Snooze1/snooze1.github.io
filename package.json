@@ -1,0 +1,6 @@
+{
+  "dependencies": {
+    "lax.js": "^2.0.3",
+    "rellax": "^1.12.1"
+  }
+}

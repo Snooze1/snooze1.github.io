@@ -1,0 +1,24 @@
+Todo:
+
+
+MAIN
+-----------
+* Cleanup residual css/html
+* Verify consistent margins/padding as needed
+* Write in General Sections
+
+* Redraw bg element
+    * Possibly implement parallax scroll
+    * Possibly horizontal loop
+
+
+
+STEPCHARTS
+----------------
+* Modify CSS to push main box to top
+* Finish Metadata in table
+* Verify links
+
+
+* Finish and link external spreadsheet
+* Dropdown animation (?)

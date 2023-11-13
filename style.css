@@ -1,0 +1,556 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300&display=swap');
+
+html{
+    font-family: 'Roboto', sans-serif;
+    scroll-behavior: smooth;
+    background: linear-gradient( rgba(2,0,36,1) 0%, rgb(45, 6, 90) 47%, rgb(16, 4, 82) 100%);
+}
+
+body{
+    margin: 0;
+    padding: 0;
+
+}
+.bgwrap{
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    z-index: -100;
+}
+.bgobj div {
+    position: fixed;
+    top: 110%;
+}
+.bgobj .core {
+    border-radius: 50%;
+}
+.bgobj .cont:nth-child(1){
+    left: 10%;
+    animation: upDown 9s infinite ease-in-out;
+}
+.bgobj .cont:nth-child(2){
+    left: 30%;
+    animation: upDown 5s infinite ease-in-out;
+}
+.bgobj .cont:nth-child(3){
+    left: 50%;
+    animation: upDown 8.5s infinite ease-in-out;
+}
+.bgobj .cont:nth-child(4){
+    left: 70%;
+    animation: upDown 3.5s infinite ease-in-out;
+}
+.bgobj .cont:nth-child(5){
+    left: 90%;
+    animation: upDown 5.5s infinite ease-in-out;
+}
+.bgobj .cont:nth-child(1) .core{
+    box-shadow: 40px 40px 40px 20px rgb(228, 255, 213);
+    animation: translate2 2s alternate infinite ease-in-out;
+}
+.bgobj .cont:nth-child(2) .core{
+    box-shadow: 40px 40px 40px 20px rgb(255, 255, 255);
+    animation: translate1 6s alternate infinite ease-in-out;
+}
+.bgobj .cont:nth-child(3) .core{
+    box-shadow: 40px 40px 40px 20px rgb(255, 255, 255);
+    animation: translate3 5s alternate infinite ease-in-out;
+}
+.bgobj .cont:nth-child(4) .core{
+    box-shadow: 10px 10px 40px 20px rgb(255, 255, 255);
+    animation: translate4 10s alternate infinite ease-in-out;
+}
+.bgobj .cont:nth-child(5) .core{
+    box-shadow: 10px 10px 40px 20px rgb(255, 255, 255);
+    animation: translate1 6s alternate infinite ease-in-out;
+}
+
+@keyframes upDown {
+    from{ transform: translatey(0%); opacity:1}
+    to{ transform: translatey(-250px) scale(0); opacity:0}
+  }
+
+@keyframes translate1 {
+    0% { transform: translatex(200px);}
+    100% {transform: translatex(100px);}
+  }
+
+@keyframes translate2 {
+    0% { transform: translatex(100px);}
+    100% {transform: translatex(-200px);}
+  }
+
+@keyframes translate3 {
+    0% { transform: translatex(0px);}
+    100% {transform: translatex(-300px);}
+  }
+
+@keyframes translate4 {
+    0% { transform: translatex(0px);}
+    100% {transform: translatex(150px);}
+  }
+
+.bgaurora div {
+    position: fixed;
+    width: 100%;
+    border-radius: 100%;
+    left: 0%;
+    box-shadow: 2px 2px 50px 25px var(--shadow-color);
+    animation: fade 10s linear infinite;
+}
+
+.bgaurora div:nth-child(1){
+    --shadow-color: rgba(113, 247, 95, 0.514);
+    top: 0%;
+    animation: fade 5s linear infinite;
+}
+
+.bgaurora div:nth-child(2){
+    --shadow-color: rgba(3, 238, 255, 0.541);
+    top: 1%;
+    animation: fade1 7s linear infinite;
+}
+
+.bgaurora div:nth-child(3){
+    --shadow-color: rgba(251, 255, 3, 0.158);
+    top: -1%;
+    animation: fade1 3s linear infinite;
+}
+
+@keyframes fade {
+    0%,100% { opacity: 0 }
+    50% { opacity: 1 }
+}
+
+@keyframes fade1 {
+    0%,100% { opacity: 0.5 }
+    50% { opacity: 1 }
+}
+.starcont {
+    position: absolute;
+    overflow: hidden;
+    top:0px;
+    left:0px;
+    width: 100%;
+    height: 6250px;
+    z-index: -50;
+}
+.starscroll {
+    background-image: url("star1.png");
+    background-repeat: repeat;
+    opacity:0.3;
+    height: 6432px;
+    width:3980px;
+    animation: slide 60s linear infinite;
+}
+.starscroll2 {
+    background-image: url("star2.png");
+    background-repeat: repeat;
+    opacity:0.5;
+    height: 6432px;
+    width:3980px;
+    animation: slide 80s linear infinite;
+}
+.starscroll3 {
+    background-image: url("star3.png");
+    background-repeat: repeat;
+    height: 6432px;
+    width:3980px;
+    animation: slide 40s linear infinite;
+}
+
+@keyframes slide {
+    0% {
+      transform: translate(0px);
+    }
+    100% {
+      transform: translate(-995px); /* The image width */
+    }
+  }
+
+.bodycontain {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content:center;
+}
+
+.container {
+    padding-top:250px;
+    display: flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+  }
+
+#currproj{
+    border-bottom: solid;
+    border-width: 5px;
+}
+
+#steppage{
+    padding-top: 80px;
+    padding-bottom: 80px;
+    max-width: 600px;
+}
+
+.fchildmain {
+    background: linear-gradient(#c19afff3, #c19affa6);
+    text-align: center;
+    width: 200px;
+    height: 348px;
+    padding:24px;
+    border-radius: 25px;
+    box-shadow:5px 5px 5px #0000003f;
+    animation: fadein ease 3s;
+    }
+    @keyframes fadein {
+        0% {
+            opacity: 0;
+        }
+        100% {
+            opacity: 1;
+         }
+}
+
+.fchildsub{
+    background-color: rgba(192, 154, 255, 0.9);
+    text-align: center;
+    margin-right: 200px;
+    margin-left: 200px;
+    margin-top: 500px;
+    padding: 50px;
+    padding-top: 6px;
+    border-radius: 25px;
+    box-shadow:5px 5px 5px #0000003f;
+    animation: fadein ease 3s;
+    min-width: 600px;
+    max-width: 600px;
+}
+
+.fchartblock{
+    background-color: rgba(192, 154, 255, 0.9);
+    text-align: center;
+    padding: 3%;
+    border-radius: 25px;
+    box-shadow:5px 5px 5px #0000003f;
+    animation: fadein ease 3s;
+    min-width: 600px;
+    max-width: 600px;
+    }
+
+#finalblock{
+    margin-bottom: 100px;
+}
+
+.mainico{
+    border-radius: 50%;
+    border: 5px solid #002fff28;
+    transition: 0.3s;
+    height: 100px;
+    box-shadow:5px 5px 5px #0000003f;
+    will-change: transform;
+}
+
+p{
+    line-height: 23px;
+}
+
+h1{
+    margin: 3%;
+}
+h2{
+    font-weight: bold;
+    font-size: 150%;
+    padding: 16px;
+}
+
+hr{
+    opacity: 50%;
+    border: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(62,9,121,1) 47%, rgb(0, 16, 160) 100%);
+}
+
+li {
+    list-style-type: none;
+}
+
+li a {
+    display: block;
+    color: rgb(3, 0, 53);
+    text-align:center;
+    padding: 10px;
+    text-decoration: none;
+    transition: 0.3s;
+}
+
+li a:hover {
+    background-color: #d4bde2;
+}
+
+.mainico:hover{
+    transform: scale(1.1);
+}
+
+#introsect{
+    top: -280px;
+}
+#progsect{
+    top: -280px;
+}
+#musicsect{
+    top: -164px;
+}
+#stepsect{
+    top: -16px;
+}
+#artsect{
+    top: -116px;
+}
+.anchor{
+    position: relative;
+}
+
+.iframe-youtube {
+    width: 90%;
+    aspect-ratio: 16 / 9;
+    max-width: 505px;
+}
+.subsect {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+.subsect2 {
+    display: flex;
+    justify-content:center;
+    padding: 5px;
+    margin: auto;
+    max-height: 60%;
+    max-width: 60%;
+}
+
+.subsect3 {
+    padding: 5px;
+    margin: auto;
+    max-height: 50%;
+    max-width: 75%;
+}
+
+.subsect4 {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content:center;
+    padding: 10px;
+    margin: auto;
+}
+
+.scbox{
+    padding:10px;
+    width: 100%;
+}
+
+
+.mainlink {
+    font-size: larger;
+    transition: 0.3s;
+}
+
+.mainlink:hover{
+    transform: scale(1.5);
+    
+}
+
+
+ul.incl {
+    margin-right: 3%;
+    list-style-type: none;
+    list-style-position: inside;
+}
+
+.bn {
+    width: 50%;
+    transition: 0.3s;
+    margin: 2%;
+}
+
+.bnwrap{
+    display: inline-flex;
+    flex-direction:column;
+    align-items: center;
+    justify-content: center;
+    background-color: brown;
+    height: 200px;
+    width: 700px;
+    transition: 0.3s;
+}
+
+
+
+.bn:hover{
+    transform: scale(1.1);
+    background:  rgba(192, 154, 255, 0.9);
+    transition: 0.3s;
+}
+
+.spacer {
+    margin-top: 80px;
+}
+
+table {
+    justify-content: center;
+    display: block;
+    width: 80%;
+    margin:auto;
+    padding-top: 16px;
+    padding-left: 8px;
+    padding-right: 8px;
+    border-collapse: collapse;
+}
+
+td {
+    border: 1px solid;
+    padding: 1%;
+    min-width: 70px;
+}
+
+#neo1 {
+    background: url(banners/NEOSIMS_BN.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#neo2 {
+    background: url(banners/NEO2-bn.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#tshowcase4{
+    background: url(https://xrgtmx.github.io/Technical-Showcase-4/img/ts4-bn.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#cfan1 {
+    background: url(banners/cf1.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#cfan2 {
+    background: url(banners/cf2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#fachill2 {
+    background: url(banners/fa2.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#holho {
+    background: url(banners/hhbn.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#ups3 {
+    background: url(banners/ups3.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+#ups5 {
+    background: url(banners/ups5.png) no-repeat center center;
+    background-size: 100% 100%;
+}
+
+.sora2-bn-row > a {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    aspect-ratio: 836 / 328;
+    margin: auto;
+    margin-top: 20px;
+
+    /* useless line on its own; but affects the
+    absolutely positioned bntext element! */
+    position: relative;
+
+    /*transition: background-size 0.3s;*/
+    /*transition: width 0.3s;*/
+    transition: transform 0.3s;
+
+    text-decoration: none;
+
+}
+
+.sora2-bn-row a:hover {
+    /*background-size: 120% 120%;*/
+    /*width: 60%;*/
+    transform: scale(1.1);
+    z-index: 5;
+}
+
+.sora2-bntext {
+    background-color: aqua;
+    opacity:50%;
+}
+
+.sora-bn-row, .sora2-bn-row {
+    margin: auto;
+}
+
+.sora-bn-row a {
+    display: block;
+    width: 50%;
+    margin: auto;
+
+    /* useless line on its own; but affects the
+    absolutely positioned bntext element! */
+    position: relative;
+}
+
+.sora-bn-row img {
+    max-width: 100%;
+}
+
+.sora-bntextblock {
+    /* absolute elements will always anchor to
+    the nearest "relative" element, or to the
+    page if none exists. */
+    position: absolute;
+    /*
+    "inset: 0" is equivalent to:
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    */
+    inset: 0;
+    display: flex;
+    /* horizontal */
+    justify-content: center;
+    /* vertical */
+    align-items: center;
+}
+/* 836 x 328 */
+
+
+.sora2-bn-row .sora2-bntext {
+    transition: font-size 0.3s;
+}
+
+.sora2-bn-row .sora2-bntext:hover {
+
+    font-size: 120%;
+}
+
+details{
+    padding-top:8px
+}
+
+
+
+
+
+
+
+
+
+
