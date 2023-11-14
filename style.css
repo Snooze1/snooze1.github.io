@@ -185,25 +185,8 @@ body{
     flex-direction:column;
     align-items: center;
     justify-content: center;
-  }
-
-#currproj{
-    color: rgba(0, 0, 0, 0.527);
-    transition: 0.3s;
-    line-height:5px;
 }
 
-
-#currproj:hover{
-    font-size: xx-large;
-}
-
-#stat2{          /* Text hover grow w/o extending parent div */
-    display: flex;
-    flex-direction: column;
-    height:100px;
-    border: 1px solid rgba(0, 0, 0, 0.377);
-}
 
 #steppage{
     margin:auto;
@@ -255,10 +238,46 @@ body{
     animation: fadein ease 3s;
     min-width: 600px;
     max-width: 600px;
-    }
+}
+#currproj{
+    transition: 0.3s;
+    line-height:0px;
+}
+#currproj:hover{
+    font-size:25px;
+    color: #9f09fc;
+}
+#stat2{          /* Text hover grow w/o extending parent div */
+    display: block;
+    height:100px;
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-bottom: 0px;
+
+}
+.chartsect1{
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-bottom: 0px;
+    padding-bottom: 64px;
+}
+.chartsect2{
+    border: 1px solid rgba(0, 0, 0, 0.199);
+    border-bottom: 0px;
+    padding-bottom: 64px;
+}
+.chartsect3{
+    border: 1px solid rgba(0, 0, 0, 0.199);
+}
 
 #finalblock{
     margin-bottom: 100px;
+}
+
+.icocontain{
+    position: relative;
+    margin: auto;
+    color: aqua;
+    border: 5px solid #002fff28;
+    height: 100px;
 }
 
 .mainico{
@@ -266,8 +285,43 @@ body{
     border: 5px solid #002fff28;
     transition: 0.3s;
     height: 100px;
+    width: 100px;
     box-shadow:5px 5px 5px #0000003f;
     will-change: transform;
+}
+.hometext{
+    margin-top: 35%;
+    font-weight:bold;
+    font-size: x-large;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0);
+
+}
+.homeredir{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #002fff28;
+    margin-left:245px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    transition: 0.5s;
+    z-index: 200;
+
+}
+
+.homeredir:hover{
+    background-color: rgba(0, 0, 0, 0.486);
+}
+
+.homeredir:hover > .hometext{
+    color: rgb(255, 255, 255);
+}
+
+.mainico:hover + .homeredir:hover{
+    transform: scale(1.1);
 }
 
 p{
@@ -303,10 +357,6 @@ li a {
 
 li a:hover {
     background-color: #d4bde2;
-}
-
-.mainico:hover{
-    transform: scale(1.1);
 }
 
 #introsect{
@@ -362,6 +412,7 @@ li a:hover {
     width: 100%;
 }
 .mainlink {
+    padding-right:7px;    /*Slight Text recenter*/ 
     font-size: larger;
     transition: 0.3s;
     line-height: 5px;
@@ -372,12 +423,10 @@ li a:hover {
 .mainlink:hover{
     font-size: 22px;
     color: #9f09fc;
-
     
 }
 #stat{          /* Text hover grow w/o extending parent div */
-    display: flex;
-    flex-direction: column;
+    display: block;
     height:2px;
 }
 
@@ -503,7 +552,7 @@ td {
 .sora2-bn-row a:hover {
     /*background-size: 120% 120%;*/
     /*width: 60%;*/
-    transform: scale(1.1);
+    transform: scale(1.05);
     z-index: 5;
 }
 
