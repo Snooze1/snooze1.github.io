@@ -133,32 +133,32 @@ body{
     top:0px;
     left:0px;
     width: 100%;
-    height: 6250px;
+    height:800vh;
+    
     z-index: -50;
 }
-.starscroll {
+
+#ss1{
     background-image: url("star1.png");
-    background-repeat: repeat;
     opacity:0.3;
-    height: 6432px;
-    width:3980px;
     animation: slide 60s linear infinite;
 }
-.starscroll2 {
+
+#ss2{
     background-image: url("star2.png");
-    background-repeat: repeat;
-    opacity:0.5;
-    height: 6432px;
-    width:3980px;
+    opacity:0.6;
     animation: slide 80s linear infinite;
 }
-.starscroll3 {
+#ss3{
     background-image: url("star3.png");
-    background-repeat: repeat;
-    height: 6432px;
-    width:3980px;
     animation: slide 40s linear infinite;
 }
+.starscroll {
+    background-repeat: repeat;
+    height: inherit;
+    width:3980px;
+}
+
 
 @keyframes slide {
     0% {
@@ -170,6 +170,9 @@ body{
   }
 
 .bodycontain {
+    position: relative;
+    overflow:hidden;
+    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -185,11 +188,25 @@ body{
   }
 
 #currproj{
-    border-bottom: solid;
-    border-width: 5px;
+    color: rgba(0, 0, 0, 0.527);
+    transition: 0.3s;
+    line-height:5px;
+}
+
+
+#currproj:hover{
+    font-size: xx-large;
+}
+
+#stat2{          /* Text hover grow w/o extending parent div */
+    display: flex;
+    flex-direction: column;
+    height:100px;
+    border: 1px solid rgba(0, 0, 0, 0.377);
 }
 
 #steppage{
+    margin:auto;
     padding-top: 80px;
     padding-bottom: 80px;
     max-width: 600px;
@@ -310,7 +327,6 @@ li a:hover {
 .anchor{
     position: relative;
 }
-
 .iframe-youtube {
     width: 90%;
     aspect-ratio: 16 / 9;
@@ -320,7 +336,6 @@ li a:hover {
     max-width: 100%;
     max-height: 100%;
 }
-
 .subsect2 {
     display: flex;
     justify-content:center;
@@ -329,14 +344,12 @@ li a:hover {
     max-height: 60%;
     max-width: 60%;
 }
-
 .subsect3 {
     padding: 5px;
     margin: auto;
     max-height: 50%;
     max-width: 75%;
 }
-
 .subsect4 {
     display: flex;
     flex-wrap: wrap;
@@ -344,23 +357,29 @@ li a:hover {
     padding: 10px;
     margin: auto;
 }
-
 .scbox{
     padding:10px;
     width: 100%;
 }
-
-
 .mainlink {
     font-size: larger;
     transition: 0.3s;
+    line-height: 5px;
+    padding-top:10px;
+    padding-bottom:10px;
+    font-weight:bold;
 }
-
 .mainlink:hover{
-    transform: scale(1.5);
+    font-size: 22px;
+    color: #9f09fc;
+
     
 }
-
+#stat{          /* Text hover grow w/o extending parent div */
+    display: flex;
+    flex-direction: column;
+    height:2px;
+}
 
 ul.incl {
     margin-right: 3%;
@@ -467,6 +486,7 @@ td {
     aspect-ratio: 836 / 328;
     margin: auto;
     margin-top: 20px;
+    margin-bottom: 5px;
 
     /* useless line on its own; but affects the
     absolutely positioned bntext element! */
