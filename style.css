@@ -9,7 +9,6 @@ html{
 body{
     margin: 0;
     padding: 0;
-
 }
 .bgwrap{
     position: fixed;
@@ -133,8 +132,7 @@ body{
     top:0px;
     left:0px;
     width: 100%;
-    height:800vh;
-    
+    height:100%;
     z-index: -50;
 }
 
@@ -171,12 +169,11 @@ body{
 
 .bodycontain {
     position: relative;
-    overflow:hidden;
-    height: auto;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content:center;
+    height: inherit;
 }
 
 .container {
@@ -185,9 +182,8 @@ body{
     flex-direction:column;
     align-items: center;
     justify-content: center;
+    
 }
-
-
 #steppage{
     margin:auto;
     padding-top: 80px;
@@ -290,11 +286,13 @@ body{
     will-change: transform;
 }
 .hometext{
-    margin-top: 35%;
+    margin-top: 35px;
+    margin-left: 5px;
     font-weight:bold;
     font-size: x-large;
     transition: 0.5s;
     color: rgba(255, 255, 255, 0);
+    text-decoration: none;
 
 }
 .homeredir{
@@ -309,11 +307,10 @@ body{
     width: 100px;
     transition: 0.5s;
     z-index: 200;
-
 }
 
 .homeredir:hover{
-    background-color: rgba(0, 0, 0, 0.486);
+    background-color: rgba(40, 0, 58, 0.8);
 }
 
 .homeredir:hover > .hometext{
@@ -618,8 +615,38 @@ details{
 
 
 
+@media only screen and (max-width: 650px) {
+    .fchildsub{
+        min-width:360px;
+        max-width:360px;
+    }
 
+    .fchartblock{
+        min-width:360px;
+        max-width:360px;
+    }
 
+    .hometext{
+        margin-left: 3px;
+    }
+    .homeredir{
+        margin-left:125px;
+    }
+    table {
 
+        font-size: small;
+        overflow: auto;
+    }
 
-
+    .sora2-bn-row > a {
+        width: 75%;
+    }
+    .subsect2 {
+        max-height: 75%;
+        max-width: 75%;
+    }
+    .subsect3 {
+        max-height: 100%;
+        max-width: 100%;
+    }
+  }
