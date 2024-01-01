@@ -196,6 +196,7 @@ body{
     text-align: center;
     width: 200px;
     height: 348px;
+    margin-top: -50px;
     padding:24px;
     border-radius: 25px;
     box-shadow:5px 5px 5px #0000003f;
@@ -305,7 +306,6 @@ body{
     border-radius: 50%;
     height: 100px;
     width: 100px;
-    transition: 0.5s;
     z-index: 200;
 }
 
@@ -615,31 +615,33 @@ details{
 
 
 
-@media only screen and (max-width: 650px) {
+@media only screen and (max-width: 675px) {
+    .fchildmain{
+
+    }
     .fchildsub{
-        min-width:360px;
-        max-width:360px;
+        min-width:275px;
+        max-width:275px;
     }
 
     .fchartblock{
-        min-width:360px;
-        max-width:360px;
+        min-width:350px;
+        max-width:350px;
     }
 
     .hometext{
         margin-left: 3px;
     }
     .homeredir{
-        margin-left:125px;
+        margin-left:120px;
     }
     table {
 
         font-size: small;
         overflow: auto;
     }
-
     .sora2-bn-row > a {
-        width: 75%;
+        width: 85%;
     }
     .subsect2 {
         max-height: 75%;
@@ -648,5 +650,24 @@ details{
     .subsect3 {
         max-height: 100%;
         max-width: 100%;
+    }
+    .subsect4 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content:start;
+        padding-top: 10px;
+        padding-bottom:10px;
+        margin-left: -50px;
+        min-width: 358px;
+    }  
+    .iframe-youtube {
+        width: 100%;
+        aspect-ratio: 16 / 9;
+        min-width: 280px;
+        max-width: 300px;
+    }
+    p{
+        margin-left: 5px;
+        margin-right: 5px;
     }
   }
