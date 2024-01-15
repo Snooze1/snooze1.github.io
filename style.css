@@ -157,6 +157,13 @@ body{
     width:3980px;
 }
 
+.flavor
+{
+    font-size: small;
+    font-style: italic;
+    padding-top: none;
+    padding-bottom: none;
+}
 
 @keyframes slide {
     0% {
@@ -180,8 +187,6 @@ body{
     padding-top:250px;
     display: flex;
     flex-direction:column;
-    align-items: center;
-    justify-content: center;
     
 }
 #steppage{
@@ -191,12 +196,12 @@ body{
     max-width: 600px;
 }
 
+
 .fchildmain {
     background: linear-gradient(#c19afff3, #c19affa6);
     text-align: center;
     width: 200px;
     height: 348px;
-    margin-top: -50px;
     padding:24px;
     border-radius: 25px;
     box-shadow:5px 5px 5px #0000003f;
@@ -214,9 +219,9 @@ body{
 .fchildsub{
     background-color: rgba(192, 154, 255, 0.9);
     text-align: center;
-    margin-right: 200px;
-    margin-left: 200px;
-    margin-top: 500px;
+    margin-right: 0.5vh;
+    margin-left: 0.5vh;
+    margin-top:75vh;
     padding: 50px;
     padding-top: 6px;
     border-radius: 25px;
@@ -241,7 +246,7 @@ body{
     line-height:0px;
 }
 #currproj:hover{
-    font-size:25px;
+    font-size:26px;
     color: #9f09fc;
 }
 #stat2{          /* Text hover grow w/o extending parent div */
@@ -287,8 +292,8 @@ body{
     will-change: transform;
 }
 .hometext{
-    margin-top: 35px;
-    margin-left: 5px;
+    margin-top: 36px;
+    margin-left: 6px;
     font-weight:bold;
     font-size: x-large;
     transition: 0.5s;
@@ -307,10 +312,12 @@ body{
     height: 100px;
     width: 100px;
     z-index: 200;
+    transition: 0.5s;
 }
 
 .homeredir:hover{
-    background-color: rgba(40, 0, 58, 0.8);
+    background-color: rgba(40, 0, 58, 0.7);
+    transition:0.5s;
 }
 
 .homeredir:hover > .hometext{
@@ -366,10 +373,10 @@ li a:hover {
     top: -164px;
 }
 #stepsect{
-    top: -16px;
+    top: -18px;
 }
 #artsect{
-    top: -116px;
+    top: -75px;
 }
 .anchor{
     position: relative;
@@ -377,7 +384,7 @@ li a:hover {
 .iframe-youtube {
     width: 90%;
     aspect-ratio: 16 / 9;
-    max-width: 505px;
+    max-width: 400px;
 }
 .subsect {
     max-width: 100%;
@@ -449,8 +456,6 @@ ul.incl {
     width: 700px;
     transition: 0.3s;
 }
-
-
 
 .bn:hover{
     transform: scale(1.1);
@@ -620,11 +625,13 @@ details{
 
     }
     .fchildsub{
-        min-width:275px;
-        max-width:275px;
+        min-width:250px;
+        max-width:250px;
     }
-
     .fchartblock{
+        margin-top: -70px;
+        padding-left: 0%;
+        padding-right: 0%;
         min-width:350px;
         max-width:350px;
     }
@@ -658,16 +665,32 @@ details{
         padding-top: 10px;
         padding-bottom:10px;
         margin-left: -50px;
-        min-width: 358px;
+        min-width: 332px;
     }  
     .iframe-youtube {
         width: 100%;
         aspect-ratio: 16 / 9;
-        min-width: 280px;
+        min-width: 255px;
         max-width: 300px;
     }
     p{
         margin-left: 5px;
         margin-right: 5px;
+    }
+
+    #introsect{
+        top: -180px;
+    }
+    #progsect{
+        top: -180px;
+    }
+    #musicsect{
+        top: -74px;
+    }
+    #stepsect{
+        top: -10px;
+    }
+    #artsect{
+        top: -65px;
     }
   }
