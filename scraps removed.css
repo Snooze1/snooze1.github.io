@@ -1,0 +1,32 @@
+.hometext{
+    margin-top: 36px;
+    margin-left: 6px;
+    font-weight:bold;
+    font-size: x-large;
+    transition: 0.5s;
+    color: rgba(255, 255, 255, 0);
+    text-decoration: none;
+
+}
+.homeredir{
+    display: flex;
+    flex-direction: column;
+    border: 5px solid #002fff28;
+    margin-left:245px;
+    position: absolute;
+    background-color: rgba(0, 0, 0, 0);
+    border-radius: 50%;
+    height: 100px;
+    width: 100px;
+    z-index: 200;
+    transition: 0.5s;
+}
+
+.homeredir:hover{
+    background-color: rgba(40, 0, 58, 0.7);
+    transition:0.5s;
+}
+
+.homeredir:hover > .hometext{
+    color: rgb(255, 255, 255);
+}
